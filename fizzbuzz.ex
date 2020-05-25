@@ -3,7 +3,9 @@ defmodule FizzBuzz do
   Module for executing the FizzBuzz problem in Elixir.
   """
 
-  def execute(list) do
+  @defaultList [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+  def execute(list \\ @defaultList) do
     loop_with_cond(list)
   end
 
